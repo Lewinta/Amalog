@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include amalog *.css
+recursive-include amalog *.csv
+recursive-include amalog *.html
+recursive-include amalog *.ico
+recursive-include amalog *.js
+recursive-include amalog *.json
+recursive-include amalog *.md
+recursive-include amalog *.png
+recursive-include amalog *.py
+recursive-include amalog *.svg
+recursive-include amalog *.txt
+recursive-exclude amalog *.pyc
