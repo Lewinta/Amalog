@@ -8,12 +8,16 @@ frappe.ui.form.on("Payment Entry", {
     paid_amount(frm){
         frm.trigger("set_received_amt");
     },
+    target_exchange_rate(frm) {
+        frm.trigger("set_received_amt");
+    },
     set_received_amt(frm) {
-        const { paid_amount, target_exchange_rate} = frm.doc;
         setTimeout(() => {
+            console.log("Calculating")
+            const { paid_amount, target_exchange_rate} = frm.doc;
             if (frm.doc.paid_to_account_currency != "DOP")
                 frm.set_value("received_amount", paid_amount / target_exchange_rate)
-        }, 300)
+        }, 500)
     }
 
 })
