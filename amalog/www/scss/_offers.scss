@@ -116,7 +116,7 @@
       background: #fff;
       line-height: 60px;
       font-size: 15px;
-      color: #009DFF;
+      color: #05aeef;
       display: inline-block;
       @include border-radius(50%);
       i{
@@ -211,7 +211,7 @@
             opacity: 0;
             visibility: hidden;
             &:hover{
-              color: #009DFF;
+              color: #05aeef;
             }
           }
         }
@@ -279,7 +279,7 @@
         text-align: center;
     }
       a{
-        background: #009DFF;
+        background: #05aeef;
         color: #fff;
         padding: 12px 53px;
         border-radius: 30px;
@@ -287,8 +287,8 @@
         font-size: 18px;
         border: 1px solid transparent;
         &:hover{
-          color: #009DFF;
-          border: 1px solid #009DFF;
+          color: #05aeef;
+          border: 1px solid #05aeef;
           background: #fff;
         }
       }
