@@ -880,7 +880,16 @@ h3 {
     width: 70px;
   }
 }
-
+@media (max-width: 991px) {
+  .logo a img {
+    width:30%;
+  }
+}
+@media (min-width: 992px)  {
+  .logo a img {
+    width:100%;
+  }
+}
 /* line 57, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment {
   display: -webkit-box;
@@ -1297,9 +1306,10 @@ h3 {
 .slider_area .single_slider .slider_text p {
   font-size: 18px;
   font-weight: 400;
-  color: #727272;
+  color: #1F1F1F;
   margin-bottom: 40px;
   margin-top: 10px;
+  width: 65%;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -1320,6 +1330,15 @@ h3 {
 .welcome_docmed_area {
   padding-top: 120px;
   padding-bottom: 220px;
+}
+.accordion-list{
+  border-bottom: 1px solid #e8e3e3;
+  padding-bottom: 10px;
+}
+
+.accordion-list a i {
+  padding-left: 10px;
+  font-size: 13px;
 }
 
 @media (max-width: 767px) {
@@ -1342,7 +1361,9 @@ h3 {
     padding-bottom: 100px;
   }
 }
-
+strong {
+  font-weight: bold;
+}
 /* line 13, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_about.scss */
 .welcome_docmed_area .welcome_thumb {
   position: relative;
