@@ -236,7 +236,7 @@ h3 {
 .overlay2::before {
   position: absolute;
   content: "";
-  background-color: #000000;
+  background-color: #feba11;
   top: 0;
   left: 0;
   width: 100%;
@@ -880,7 +880,16 @@ h3 {
     width: 70px;
   }
 }
-
+@media (max-width: 991px) {
+  .logo a img {
+    width:30%;
+  }
+}
+@media (min-width: 992px)  {
+  .logo a img {
+    width:100%;
+  }
+}
 /* line 57, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment {
   display: -webkit-box;
@@ -1232,12 +1241,12 @@ h3 {
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url(../img/banner/banner.jpg);
+  background-image: url(../img/banner/banner.png);
 }
 
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
 .slider_bg_2 {
-  background-image: url(../img/banner/banner2.jpg);
+  background-image: url(../img/banner/banner2.png);
 }
 
 /* line 8, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
@@ -1257,9 +1266,10 @@ h3 {
 
 /* line 17, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
-  color: #1F1F1F;
+  color: white;
   font-family: "Poppins", sans-serif;
-  font-size: 70px;
+  font-size: 30px;
+  font-weight: 800;
   text-transform: capitalize;
   letter-spacing: 2px;
   font-weight: 300;
@@ -1273,7 +1283,8 @@ h3 {
 @media (max-width: 767px) {
   /* line 17, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
   .slider_area .single_slider .slider_text h3 {
-    font-size: 33px;
+    font-size: 25px;
+    font-weight: 800;
     letter-spacing: 3px;
   }
 }
@@ -1297,9 +1308,10 @@ h3 {
 .slider_area .single_slider .slider_text p {
   font-size: 18px;
   font-weight: 400;
-  color: #727272;
+  color: white;
   margin-bottom: 40px;
   margin-top: 10px;
+  width: 65%;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -1320,6 +1332,15 @@ h3 {
 .welcome_docmed_area {
   padding-top: 120px;
   padding-bottom: 220px;
+}
+.accordion-list{
+  border-bottom: 1px solid #e8e3e3;
+  padding-bottom: 10px;
+}
+
+.accordion-list a i {
+  padding-left: 10px;
+  font-size: 13px;
 }
 
 @media (max-width: 767px) {
@@ -1342,7 +1363,9 @@ h3 {
     padding-bottom: 100px;
   }
 }
-
+strong {
+  font-weight: bold;
+}
 /* line 13, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_about.scss */
 .welcome_docmed_area .welcome_thumb {
   position: relative;
@@ -1470,7 +1493,7 @@ h3 {
 /* line 89, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_about.scss */
 .welcome_docmed_area .welcome_docmed_info p {
   font-size: 16px;
-  color: #727272;
+  color: #202020;
   line-height: 28px;
 }
 
@@ -1530,7 +1553,7 @@ h3 {
 
 /* line 137, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_about.scss */
 .business_expert_area .business_info p {
-  color: #727272;
+  color: #202020;
   line-height: 28px;
   margin-bottom: 0;
 }
@@ -2762,7 +2785,7 @@ h3 {
 
 /* line 2, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_tesmonial.scss */
 .testmonial_area .single-testmonial {
-  padding: 180px 0;
+  padding: 25px 0;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -2770,13 +2793,13 @@ h3 {
 
 /* line 10, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_tesmonial.scss */
 .testmonial_area .testmonial_info .quote i {
-  color: #fff;
+  color: black;
   font-size: 40px;
 }
 
 /* line 15, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_tesmonial.scss */
 .testmonial_area .testmonial_info p {
-  color: #fff;
+  color: black;
   font-size: 20px;
   line-height: 32px;
   font-weight: 400;
@@ -2793,7 +2816,7 @@ h3 {
 
 /* line 28, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_tesmonial.scss */
 .testmonial_area .testmonial_info h4 {
-  color: #fff;
+  color: black;
   font-size: 13px;
   line-height: 20px;
   text-transform: uppercase;
@@ -2805,7 +2828,7 @@ h3 {
 /* line 36, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_tesmonial.scss */
 .testmonial_area .testmonial_info h4:before {
   position: absolute;
-  background: #fff;
+  background: black;
   width: 60px;
   height: 2px;
   content: '';
@@ -2830,12 +2853,13 @@ h3 {
 
 /* line 58, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_tesmonial.scss */
 .testmonial_bg_1 {
-  background-image: url(../img/testmonial/1.jpg);
+
+  background: #F2C163;
 }
 
 /* line 61, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_tesmonial.scss */
 .testmonial_bg_2 {
-  background-image: url(../img/testmonial/2.png);
+  background: #F2C163;
 }
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_service.scss */
@@ -6253,4 +6277,7 @@ h6 {
   font-size: 12px;
 }
 
+p {
+  color: #202020;
+}
 /*# sourceMappingURL=style.css.map */
